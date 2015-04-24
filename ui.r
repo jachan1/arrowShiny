@@ -1,3 +1,5 @@
+# shinyapps::deployApp("P:/Documents/RWD/arrowShiny/arrowShiny")
+
 fluidPage(
   # Application title
   titlePanel("LiveCycle Arrow"),
@@ -9,6 +11,7 @@ fluidPage(
       numericInput("arrowA", "Arrow Angle:", 30, min=0, step = 5),
       numericInput("arrowH", "Arrow Height:", 0.1, min=0, step=0.1),
       hr(),
+      p("To start, draw the main line in LiveCycle and change the details below accordingly"),
       p("Orientation and Direction are set for the main line"),
       selectInput("Hor", "Orientation:",
                   choices = dirHor),
